@@ -18,8 +18,11 @@ function Favourite(props) {
 
     return (
         <>
+        <h1>Favourite Student list</h1>
             {newlist.map(item => (
+                
                 <div key={item.id} className="p-4 flex ">
+                    
                     <p className="text-2xl w-32">{item.name}</p>
                     <button onClick={() => remove(item.id)} className="bg-red-400 text-white text-2xl border rounded-md p-1 w-40">Remove</button>
                 </div>
